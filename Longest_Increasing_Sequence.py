@@ -1,5 +1,3 @@
-
-
 def longest_increasing_sequence(arr):
 
     pointers = [None for _ in range(len(arr))]
