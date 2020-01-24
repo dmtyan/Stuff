@@ -15,14 +15,12 @@ def longest_increasing_sequence(arr):
                 high = medium - 1
 
         place = low
-
         pointers[i] = increasing_subsequence[place-1]
         increasing_subsequence[place] = i
-
+        
         if place > length:
             length = place
-
-
+            
     ans = [None for _ in range(length)]
     k = increasing_subsequence[length]
 
